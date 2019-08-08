@@ -1,6 +1,7 @@
 # Isometric
-<img src="misc/iso-demo-3.gif" width="400" />
+<img src="misc/iso-demo-3.gif" width="100%" max-width="700px" />
 A simple plugin for Figma that lets you make anything isometric.
+
 
 The main plugin code is in `src/code.ts`. The HTML for the UI is in `src/ui.html`, while the embedded JavaScript is in `src/ui.ts`.
 
