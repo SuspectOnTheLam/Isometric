@@ -1,7 +1,10 @@
 <p>Apply this plugin to an Instance so you can go back and edit your Master Component.</p>
 
 <div class="controls">
-    <p>Angle: <input id="angle" value="45"></p>
+    <div class="angle-label">
+        <img class="angle-icon" src="<%= require('./angle-icon.svg') %>">
+        <input id="angle" value="45">
+    </div>
     <div class="label">Perspective</div>
     <button id="left">
         <img src="<%= require('./left-button.svg') %>">
