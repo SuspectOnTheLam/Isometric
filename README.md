@@ -12,4 +12,4 @@ To build:
     $ npm install
     $ npx webpack
 
-For more info see: https://www.figma.com/plugin-docs/bundling-webpack/
+For more info, see: https://www.figma.com/plugin-docs/bundling-webpack/
