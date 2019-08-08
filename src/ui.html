@@ -1,0 +1,27 @@
+<p>Apply this plugin to an Instance so you can go back and edit your Master Component.</p>
+
+<div class="controls">
+    <p>Angle: <input id="angle" value="45"></p>
+    <div class="label">Perspective</div>
+    <button id="left">
+        <img src="<%= require('./left-button.svg') %>">
+    </button>
+    <button id="right">
+        <img src="<%= require('./right-button.svg') %>">
+    </button>
+</div>
+
+
+<script>
+    document.getElementById('left').onclick = () => {
+      const textbox = document.getElementById('angle');
+      const angle = Math.abs(parseInt(textbox.value, 10));
+      parent.postMessage({ pluginMessage: { type: 'isometric-left', angle } }, '*')
+    }
+
+    document.getElementById('right').onclick = () => {
+      const textbox = document.getElementById('angle');
+      const angle = Math.abs(parseInt(textbox.value, 10));
+      parent.postMessage({ pluginMessage: { type: 'isometric-right', angle } }, '*')
+    }
+</script>

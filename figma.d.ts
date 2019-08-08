@@ -340,7 +340,7 @@ interface Font {
 interface BaseNodeMixin {
   readonly id: string
   readonly parent: (BaseNode & ChildrenMixin) | null
-  name: string // Note: setting this also sets `autoRename` to false on TextNodes
+  name: string // Note: setting this also sets \`autoRename\` to false on TextNodes
   readonly removed: boolean
   toString(): string
   remove(): void
